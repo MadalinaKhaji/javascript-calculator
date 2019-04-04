@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+textarea {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    resize: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+#calculator {
+    width: 18rem;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: mediumspringgreen;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+#keypad {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.key {
+    width: 3rem;
+    margin: 0.2rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    outline: none;
+    font-weight: bolder;
+}
+
+.key:hover {
+   background-color: lightgrey;
+}
