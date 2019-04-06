@@ -1,45 +1,41 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- My CSS-->
     <link href="styles.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="" /> 
-
     <title>JavaScript Calculator</title>
 </head>
 <body>
     <div id="calculator">
-        <textarea cols="30" rows="5" readonly></textarea>
+        <textarea id="screen" cols="30" rows="5" readonly></textarea>
         <div id="keypad">
-            <button class="key" id="cancel">C</button>
-            <button class="key" id="dot">.</button>
-            <button class="key" id="delete">Del</button>
-            <button class="key" id="equal">=</button>
+            <button class="key" id="cancel" onclick="clearScreen()">C</button>
+            <button class="key" id="dot" onclick="showOnScreen('.')">.</button>
+            <button class="key" id="delete" onclick="deleteLastInput()">Del</button>
+            <button class="key" id="equal" onclick="showOnScreen('=')">=</button>
             <hr>
-            <button class="key" id="7">7</button>
-            <button class="key" id="8">8</button>
-            <button class="key" id="9">9</button>
-            <button class="key" id="plus">+</button>
+            <button class="key" id="7" onclick="showOnScreen('7')">7</button>
+            <button class="key" id="8" onclick="showOnScreen('8')">8</button>
+            <button class="key" id="9" onclick="showOnScreen('9')">9</button>
+            <button class="key" id="plus" onclick="showOnScreen('+')">+</button>
             <hr>
-            <button class="key" id="4">4</button>
-            <button class="key" id="5">5</button>
-            <button class="key" id="6">6</button>
-            <button class="key" id="minus">-</button>
+            <button class="key" id="4" onclick="showOnScreen('4')">4</button>
+            <button class="key" id="5" onclick="showOnScreen('5')">5</button>
+            <button class="key" id="6" onclick="showOnScreen('6')">6</button>
+            <button class="key" id="minus" onclick="showOnScreen('-')">-</button>
             <hr>
-            <button class="key" id="1">1</button>
-            <button class="key" id="2">2</button>
-            <button class="key" id="3">3</button>
-            <button class="key" id="times">x</button>
+            <button class="key" id="1" onclick="showOnScreen('1')">1</button>
+            <button class="key" id="2" onclick="showOnScreen('2')">2</button>
+            <button class="key" id="3" onclick="showOnScreen('3')">3</button>
+            <button class="key" id="times" onclick="showOnScreen('x')">x</button>
             <hr>
-            <button class="key" id="left-paranthesis">(</button>
-            <button class="key" id="0">0</button>
-            <button class="key" id="right-paranthesis">)</button>
-            <button class="key" id="divide">/</button>
+            <button class="key" id="left-paranthesis" onclick="showOnScreen('searchasciivalue')">(</button>
+            <button class="key" id="0" onclick="showOnScreen('0')">0</button>
+            <button class="key" id="right-paranthesis" onclick="showOnScreen('searchasciivalue')">)</button>
+            <button class="key" id="divide" onclick="showOnScreen('/')">/</button>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
