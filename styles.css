@@ -43,3 +43,7 @@ textarea {
 .key:hover {
    background-color: lightgrey;
 }
+
+#left-paranthesis, #right-paranthesis {
+    visibility: hidden;
+}
